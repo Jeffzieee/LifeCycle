@@ -153,5 +153,11 @@ class MainActivity : AppCompatActivity(), LifecycleObserver {
     override fun onStart(){
         super.onStart()
         Timber.i("onStart Called")
+        dessertsSold = 0
+    }
+
+    override fun onResume(){
+        super.onResume()
+        dessertsSold=0
     }
 }
